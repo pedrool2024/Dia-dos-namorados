@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffecec;
+    background-image: url(images/fundo-principal.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF5C8A;
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.coracao {
+    font-size: 50px;
+}
+
+.para {
+    font-size: 50px;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 20px;
+    min-height: 80vh;
+    background: transparent;
+}
+
+.conteudo-hero {
+    max-width: 500px;
+}
+
+.feliz {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.coracao2 {
+    color: #FF5C8A;
+    font-size: 25px;
+}
+
+.dia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #FF5C8A;
+    margin-bottom: 25px;
+}
+
+.mensagem {
+    color: #3F1A1F;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    line-height: 1.2;
+}
+
+.mensagem span {
+    color: #FF5C8A;
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-size: 58px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.descricao {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #3F1A1F;
+    margin-top: 20px;
+    max-width: 380px;
+    line-height: 1.6;
+}
+
+.btn-amor {
+    margin-top: 25px;
+    background-color: #FF5C8A;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-amor:hover {
+    background-color: #e04a76;
+}
+
+.desde {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+    gap: 40px;
+    margin-top: 0px;
+}
+
+.desde-esquerda,
+.desde-direita {
+    flex: 1;
+}
+
+.titulo-desde {
+    font-family: "Great Vibes", cursive;
+    color: #FF5C8A;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0c0cc;
+}
+
+.cards-desde {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card-desde {
+    background-color: white;
+    border: 1px solid #f5c0cc;
+    border-radius: 12px;
+    padding: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: #3F1A1F;
+    text-align: center;
+}
+
+.card-desde i {
+    font-size: 24px;
+    color: #FF5C8A;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.declaracao {
+    background-color: #8B1A3A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    margin-top: 40px;
+}
+
+.declaracao-texto h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.declaracao-texto p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.declaracao-assinatura {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.assinatura {
+    font-family: "Great Vibes", cursive;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center top;
+    }
+    .para {
+        font-size: 38px;
+    }
+    .coracao {
+        font-size: 36px;
+    }
+    .hero {
+        margin-left: 25px;
+        margin-right: 25px;
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+    .conteudo-hero {
+        max-width: 100%;
+    }
+    .mensagem {
+        font-size: 38px;
+    }
+    .mensagem span {
+        font-size: 42px;
+    }
+    .descricao {
+        max-width: 100%;
+    }
+    .desde {
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 30px;
+    }
+    .declaracao {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+    .para {
+        font-size: 28px;
+    }
+    .coracao {
+        font-size: 28px;
+    }
+    .hero {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mensagem {
+        font-size: 28px;
+    }
+    .mensagem span {
+        font-size: 32px;
+    }
+    .feliz {
+        font-size: 16px;
+    }
+    .cards-desde {
+        grid-template-columns: 1fr;
+    }
+    .desde {
+        padding: 30px 20px;
+    }
+    .declaracao {
+        padding: 30px 20px;
+    }
+    .declaracao-texto h2 {
+        font-size: 26px;
+    }
+    .btn-amor {
+        width: 100%;
+        text-align: center;
+    }
+}
